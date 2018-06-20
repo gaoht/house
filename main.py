@@ -125,7 +125,7 @@ def ziroom_detail():
     print('总共爬取详情%d条数据', total)
 
 
-def jiandemen_spider():
+def jiandemen_spider(max_price = 7500):
     """
     curl -H 'Accept: application/json;version=6' -H 'Host: phoenix.ziroom.com' -H 'User-Agent: okhttp/3.10.0' --compressed 'https://phoenix.ziroom.com/v7/room/list.json?os=android%3A8.1.0&app_version=5.5.9&ip=192.168.1.107&sign=f8785849d1a7a90dfe01ef8e618f2117&city_code=110000&type=12&network=WIFI&uid=119387a0-974c-1923-5a54-004fb5dc8ee7&sign_open=1&size=10&subway_code=10%E5%8F%B7%E7%BA%BF&price=%2C&imei=864630039151336&model=ONEPLUS+A5000&page=1&subway_station_code=%E5%81%A5%E5%BE%B7%E9%97%A8&timestamp=1529418950'
     """
@@ -174,7 +174,7 @@ def jiandemen_spider():
                     "coordinates": [room['lng'], room['lat']]
                 }
                 room['timestamp'] = params["timestamp"]
-                if room['price'] < 7500 and room['status'] != 'ycz' \
+                if room['price'] < max_price and room['status'] != 'ycz' \
                         and room['status'] != 'zxpzz' and room['price_unit'] == '元/月':
                     room_tips.append(room)
             if lenn < size:
@@ -192,11 +192,13 @@ def jiandemen_spider():
             text = "<tr><td>%s</td><td>%s</td><td>%s</td><td>%s</td><td>%s</td><td>%s</td><td>%s</td></tr>" % \
                    (tip.get("name", "名字"), tip.get("price", "$0.0"), tip.get("area", "0.0"), tip.get("face", "无"),
                     tip.get("floor", 0) + "/" + tip.get("floor_total", 0), tip.get("subway_station_info", "无") ,
-                    "http://m.ziroom.com/BJ/room/" + tip.get("id", "1") + ".html"
+                    "<a href='http://m.ziroom.com/BJ/room/" + tip.get("id", "1") + ".html'>链接</a>"
                     )
             htmls.append(text)
         htmls.append("</tbody></table>")
+        print("准备发送邮件提醒")
         send_email("350200164@qq.com", ['350200164@qq.com', '970408321@qq.com'], "房子信息", "", "".join(htmls))
+        print("发送邮件提醒")
 
 
 
@@ -224,8 +226,12 @@ if __name__ == '__main__':
     # ziroom_detail()
     # print('搞定')/
     while True:
-        jiandemen_spider()
-        time.sleep(300)
+        try:
+            jiandemen_spider(7500)
+        # except StandardError,e:
+        #     print(e)
+        finally:
+            time.sleep(300)
     # send_email('350200164@qq.com', ['350200164@qq.com', '970408321@qq.com'], "hhh", "", "哈哈哈哈")
 # dzz 立即签约
 # ycz 已预订
