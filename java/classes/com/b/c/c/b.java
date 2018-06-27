@@ -1,0 +1,167 @@
+package com.b.c.c;
+
+import java.util.HashMap;
+
+public abstract class b
+  extends com.b.c.b
+{
+  protected static void a(HashMap<Integer, String> paramHashMap)
+  {
+    paramHashMap.put(Integer.valueOf(1), "Interoperability Index");
+    paramHashMap.put(Integer.valueOf(2), "Interoperability Version");
+    paramHashMap.put(Integer.valueOf(254), "New Subfile Type");
+    paramHashMap.put(Integer.valueOf(255), "Subfile Type");
+    paramHashMap.put(Integer.valueOf(256), "Image Width");
+    paramHashMap.put(Integer.valueOf(257), "Image Height");
+    paramHashMap.put(Integer.valueOf(258), "Bits Per Sample");
+    paramHashMap.put(Integer.valueOf(259), "Compression");
+    paramHashMap.put(Integer.valueOf(262), "Photometric Interpretation");
+    paramHashMap.put(Integer.valueOf(263), "Thresholding");
+    paramHashMap.put(Integer.valueOf(266), "Fill Order");
+    paramHashMap.put(Integer.valueOf(269), "Document Name");
+    paramHashMap.put(Integer.valueOf(270), "Image Description");
+    paramHashMap.put(Integer.valueOf(271), "Make");
+    paramHashMap.put(Integer.valueOf(272), "Model");
+    paramHashMap.put(Integer.valueOf(273), "Strip Offsets");
+    paramHashMap.put(Integer.valueOf(274), "Orientation");
+    paramHashMap.put(Integer.valueOf(277), "Samples Per Pixel");
+    paramHashMap.put(Integer.valueOf(278), "Rows Per Strip");
+    paramHashMap.put(Integer.valueOf(279), "Strip Byte Counts");
+    paramHashMap.put(Integer.valueOf(280), "Minimum Sample Value");
+    paramHashMap.put(Integer.valueOf(281), "Maximum Sample Value");
+    paramHashMap.put(Integer.valueOf(282), "X Resolution");
+    paramHashMap.put(Integer.valueOf(283), "Y Resolution");
+    paramHashMap.put(Integer.valueOf(284), "Planar Configuration");
+    paramHashMap.put(Integer.valueOf(285), "Page Name");
+    paramHashMap.put(Integer.valueOf(296), "Resolution Unit");
+    paramHashMap.put(Integer.valueOf(301), "Transfer Function");
+    paramHashMap.put(Integer.valueOf(305), "Software");
+    paramHashMap.put(Integer.valueOf(306), "Date/Time");
+    paramHashMap.put(Integer.valueOf(315), "Artist");
+    paramHashMap.put(Integer.valueOf(317), "Predictor");
+    paramHashMap.put(Integer.valueOf(316), "Host Computer");
+    paramHashMap.put(Integer.valueOf(318), "White Point");
+    paramHashMap.put(Integer.valueOf(319), "Primary Chromaticities");
+    paramHashMap.put(Integer.valueOf(322), "Tile Width");
+    paramHashMap.put(Integer.valueOf(323), "Tile Length");
+    paramHashMap.put(Integer.valueOf(324), "Tile Offsets");
+    paramHashMap.put(Integer.valueOf(325), "Tile Byte Counts");
+    paramHashMap.put(Integer.valueOf(330), "Sub IFD Pointer(s)");
+    paramHashMap.put(Integer.valueOf(342), "Transfer Range");
+    paramHashMap.put(Integer.valueOf(347), "JPEG Tables");
+    paramHashMap.put(Integer.valueOf(512), "JPEG Proc");
+    paramHashMap.put(Integer.valueOf(529), "YCbCr Coefficients");
+    paramHashMap.put(Integer.valueOf(530), "YCbCr Sub-Sampling");
+    paramHashMap.put(Integer.valueOf(531), "YCbCr Positioning");
+    paramHashMap.put(Integer.valueOf(532), "Reference Black/White");
+    paramHashMap.put(Integer.valueOf(559), "Strip Row Counts");
+    paramHashMap.put(Integer.valueOf(700), "Application Notes");
+    paramHashMap.put(Integer.valueOf(4096), "Related Image File Format");
+    paramHashMap.put(Integer.valueOf(4097), "Related Image Width");
+    paramHashMap.put(Integer.valueOf(4098), "Related Image Height");
+    paramHashMap.put(Integer.valueOf(18246), "Rating");
+    paramHashMap.put(Integer.valueOf(33421), "CFA Repeat Pattern Dim");
+    paramHashMap.put(Integer.valueOf(33422), "CFA Pattern");
+    paramHashMap.put(Integer.valueOf(33423), "Battery Level");
+    paramHashMap.put(Integer.valueOf(33432), "Copyright");
+    paramHashMap.put(Integer.valueOf(33434), "Exposure Time");
+    paramHashMap.put(Integer.valueOf(33437), "F-Number");
+    paramHashMap.put(Integer.valueOf(33723), "IPTC/NAA");
+    paramHashMap.put(Integer.valueOf(34675), "Inter Color Profile");
+    paramHashMap.put(Integer.valueOf(34850), "Exposure Program");
+    paramHashMap.put(Integer.valueOf(34852), "Spectral Sensitivity");
+    paramHashMap.put(Integer.valueOf(34855), "ISO Speed Ratings");
+    paramHashMap.put(Integer.valueOf(34856), "Opto-electric Conversion Function (OECF)");
+    paramHashMap.put(Integer.valueOf(34857), "Interlace");
+    paramHashMap.put(Integer.valueOf(34858), "Time Zone Offset");
+    paramHashMap.put(Integer.valueOf(34859), "Self Timer Mode");
+    paramHashMap.put(Integer.valueOf(34864), "Sensitivity Type");
+    paramHashMap.put(Integer.valueOf(34865), "Standard Output Sensitivity");
+    paramHashMap.put(Integer.valueOf(34866), "Recommended Exposure Index");
+    paramHashMap.put(Integer.valueOf(34858), "Time Zone Offset");
+    paramHashMap.put(Integer.valueOf(34859), "Self Timer Mode");
+    paramHashMap.put(Integer.valueOf(36864), "Exif Version");
+    paramHashMap.put(Integer.valueOf(36867), "Date/Time Original");
+    paramHashMap.put(Integer.valueOf(36868), "Date/Time Digitized");
+    paramHashMap.put(Integer.valueOf(37121), "Components Configuration");
+    paramHashMap.put(Integer.valueOf(37122), "Compressed Bits Per Pixel");
+    paramHashMap.put(Integer.valueOf(37377), "Shutter Speed Value");
+    paramHashMap.put(Integer.valueOf(37378), "Aperture Value");
+    paramHashMap.put(Integer.valueOf(37379), "Brightness Value");
+    paramHashMap.put(Integer.valueOf(37380), "Exposure Bias Value");
+    paramHashMap.put(Integer.valueOf(37381), "Max Aperture Value");
+    paramHashMap.put(Integer.valueOf(37382), "Subject Distance");
+    paramHashMap.put(Integer.valueOf(37383), "Metering Mode");
+    paramHashMap.put(Integer.valueOf(37384), "White Balance");
+    paramHashMap.put(Integer.valueOf(37385), "Flash");
+    paramHashMap.put(Integer.valueOf(37386), "Focal Length");
+    paramHashMap.put(Integer.valueOf(37387), "Flash Energy");
+    paramHashMap.put(Integer.valueOf(37388), "Spatial Frequency Response");
+    paramHashMap.put(Integer.valueOf(37389), "Noise");
+    paramHashMap.put(Integer.valueOf(37390), "Focal Plane X Resolution");
+    paramHashMap.put(Integer.valueOf(37391), "Focal Plane Y Resolution");
+    paramHashMap.put(Integer.valueOf(37393), "Image Number");
+    paramHashMap.put(Integer.valueOf(37394), "Security Classification");
+    paramHashMap.put(Integer.valueOf(37395), "Image History");
+    paramHashMap.put(Integer.valueOf(37396), "Subject Location");
+    paramHashMap.put(Integer.valueOf(37397), "Exposure Index");
+    paramHashMap.put(Integer.valueOf(37398), "TIFF/EP Standard ID");
+    paramHashMap.put(Integer.valueOf(37500), "Makernote");
+    paramHashMap.put(Integer.valueOf(37510), "User Comment");
+    paramHashMap.put(Integer.valueOf(37520), "Sub-Sec Time");
+    paramHashMap.put(Integer.valueOf(37521), "Sub-Sec Time Original");
+    paramHashMap.put(Integer.valueOf(37522), "Sub-Sec Time Digitized");
+    paramHashMap.put(Integer.valueOf(40091), "Windows XP Title");
+    paramHashMap.put(Integer.valueOf(40092), "Windows XP Comment");
+    paramHashMap.put(Integer.valueOf(40093), "Windows XP Author");
+    paramHashMap.put(Integer.valueOf(40094), "Windows XP Keywords");
+    paramHashMap.put(Integer.valueOf(40095), "Windows XP Subject");
+    paramHashMap.put(Integer.valueOf(40960), "FlashPix Version");
+    paramHashMap.put(Integer.valueOf(40961), "Color Space");
+    paramHashMap.put(Integer.valueOf(40962), "Exif Image Width");
+    paramHashMap.put(Integer.valueOf(40963), "Exif Image Height");
+    paramHashMap.put(Integer.valueOf(40964), "Related Sound File");
+    paramHashMap.put(Integer.valueOf(41483), "Flash Energy");
+    paramHashMap.put(Integer.valueOf(41484), "Spatial Frequency Response");
+    paramHashMap.put(Integer.valueOf(41486), "Focal Plane X Resolution");
+    paramHashMap.put(Integer.valueOf(41487), "Focal Plane Y Resolution");
+    paramHashMap.put(Integer.valueOf(41488), "Focal Plane Resolution Unit");
+    paramHashMap.put(Integer.valueOf(41492), "Subject Location");
+    paramHashMap.put(Integer.valueOf(41493), "Exposure Index");
+    paramHashMap.put(Integer.valueOf(41495), "Sensing Method");
+    paramHashMap.put(Integer.valueOf(41728), "File Source");
+    paramHashMap.put(Integer.valueOf(41729), "Scene Type");
+    paramHashMap.put(Integer.valueOf(41730), "CFA Pattern");
+    paramHashMap.put(Integer.valueOf(41985), "Custom Rendered");
+    paramHashMap.put(Integer.valueOf(41986), "Exposure Mode");
+    paramHashMap.put(Integer.valueOf(41987), "White Balance Mode");
+    paramHashMap.put(Integer.valueOf(41988), "Digital Zoom Ratio");
+    paramHashMap.put(Integer.valueOf(41989), "Focal Length 35");
+    paramHashMap.put(Integer.valueOf(41990), "Scene Capture Type");
+    paramHashMap.put(Integer.valueOf(41991), "Gain Control");
+    paramHashMap.put(Integer.valueOf(41992), "Contrast");
+    paramHashMap.put(Integer.valueOf(41993), "Saturation");
+    paramHashMap.put(Integer.valueOf(41994), "Sharpness");
+    paramHashMap.put(Integer.valueOf(41995), "Device Setting Description");
+    paramHashMap.put(Integer.valueOf(41996), "Subject Distance Range");
+    paramHashMap.put(Integer.valueOf(42016), "Unique Image ID");
+    paramHashMap.put(Integer.valueOf(42032), "Camera Owner Name");
+    paramHashMap.put(Integer.valueOf(42033), "Body Serial Number");
+    paramHashMap.put(Integer.valueOf(42034), "Lens Specification");
+    paramHashMap.put(Integer.valueOf(42035), "Lens Make");
+    paramHashMap.put(Integer.valueOf(42036), "Lens Model");
+    paramHashMap.put(Integer.valueOf(42037), "Lens Serial Number");
+    paramHashMap.put(Integer.valueOf(42240), "Gamma");
+    paramHashMap.put(Integer.valueOf(50341), "Print IM");
+    paramHashMap.put(Integer.valueOf(50898), "Panasonic Title");
+    paramHashMap.put(Integer.valueOf(50899), "Panasonic Title (2)");
+    paramHashMap.put(Integer.valueOf(59932), "Padding");
+    paramHashMap.put(Integer.valueOf(65002), "Lens");
+  }
+}
+
+
+/* Location:              /Users/gaoht/Downloads/zirom/classes-dex2jar.jar!/com/b/c/c/b.class
+ * Java compiler version: 6 (50.0)
+ * JD-Core Version:       0.7.1
+ */
